@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  // *** used to display/hide the select list ***
+  showSelect: boolean = true;
   // this represents the Item table
   items: any[] = [
     { id: 1, description: "Item 1" },
@@ -39,5 +41,7 @@ export class AppComponent {
       this.quotelines.push(quoteLine);
     }
     console.table(this.quotelines);
+    // *** this causes the select list to disappear ***
+    this.showSelect = false
   }
 }

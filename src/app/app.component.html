@@ -1,4 +1,12 @@
-<div>
+<!-- 
+  The ngIf will display the div and all within it if
+  the property 'showSelect' is true. If it is false,
+  they the div and all within it disappears. 
+  
+  The example will make the select list disappear 
+  when the Display button is clicked.
+   -->
+<div *ngIf="showSelect">
   <!-- 
       This is the definition of the SELECT that allows multiple
       selections. The user selects the first item normally, then
