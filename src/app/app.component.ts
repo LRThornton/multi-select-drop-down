@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  // 9/27 3pm
   // *** used to display/hide the select list ***
   showSelect: boolean = true;
   // this represents the Item table
@@ -41,6 +42,7 @@ export class AppComponent {
       this.quotelines.push(quoteLine);
     }
     console.table(this.quotelines);
+    // 9/27 3pm 
     // *** this causes the select list to disappear ***
     this.showSelect = false
   }
